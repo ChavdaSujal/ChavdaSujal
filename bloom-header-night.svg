@@ -1,24 +1,101 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" width="900" height="300" font-family="Segoe UI, Ubuntu, Helvetica, Arial, sans-serif">
-  <title>ChavdaSujal — blooming banner</title><g transform="translate(356,21) scale(0.93)"><path d="M0 -5 L1.2 -1.2 L5 0 L1.2 1.2 L0 5 L-1.2 1.2 L-5 0 L-1.2 -1.2 Z" fill="#D9E6F5" opacity="0.2"><animate attributeName="opacity" values="0.15;0.9;0.15" keyTimes="0;0.5;1" dur="2.9s" begin="0.2s" repeatCount="indefinite"/></path></g><circle cx="121" cy="35" r="1.0" fill="#D9E6F5" opacity="0.2"><animate attributeName="opacity" values="0.1;0.8;0.1" keyTimes="0;0.5;1" dur="3.4s" begin="3.6s" repeatCount="indefinite"/></circle><circle cx="113" cy="39" r="1.2" fill="#D9E6F5" opacity="0.2"><animate attributeName="opacity" values="0.1;0.8;0.1" keyTimes="0;0.5;1" dur="2.9s" begin="1.0s" repeatCount="indefinite"/></circle><g transform="translate(85,64) scale(0.85)"><path d="M0 -5 L1.2 -1.2 L5 0 L1.2 1.2 L0 5 L-1.2 1.2 L-5 0 L-1.2 -1.2 Z" fill="#D9E6F5" opacity="0.2"><animate attributeName="opacity" values="0.15;0.9;0.15" keyTimes="0;0.5;1" dur="3.3s" begin="3.8s" repeatCount="indefinite"/></path></g><circle cx="621" cy="15" r="1.5" fill="#D9E6F5" opacity="0.2"><animate attributeName="opacity" values="0.1;0.8;0.1" keyTimes="0;0.5;1" dur="3.4s" begin="1.6s" repeatCount="indefinite"/></circle><circle cx="72" cy="47" r="1.0" fill="#D9E6F5" opacity="0.2"><animate attributeName="opacity" values="0.1;0.8;0.1" keyTimes="0;0.5;1" dur="4.1s" begin="1.2s" repeatCount="indefinite"/></circle><g transform="translate(145,48) scale(0.67)"><path d="M0 -5 L1.2 -1.2 L5 0 L1.2 1.2 L0 5 L-1.2 1.2 L-5 0 L-1.2 -1.2 Z" fill="#D9E6F5" opacity="0.2"><animate attributeName="opacity" values="0.15;0.9;0.15" keyTimes="0;0.5;1" dur="2.6s" begin="3.3s" repeatCount="indefinite"/></path></g><circle cx="620" cy="48" r="1.2" fill="#D9E6F5" opacity="0.2"><animate attributeName="opacity" values="0.1;0.8;0.1" keyTimes="0;0.5;1" dur="3.5s" begin="1.5s" repeatCount="indefinite"/></circle><circle cx="89" cy="48" r="1.3" fill="#D9E6F5" opacity="0.2"><animate attributeName="opacity" values="0.1;0.8;0.1" keyTimes="0;0.5;1" dur="2.0s" begin="0.8s" repeatCount="indefinite"/></circle><g transform="translate(462,61) scale(0.78)"><path d="M0 -5 L1.2 -1.2 L5 0 L1.2 1.2 L0 5 L-1.2 1.2 L-5 0 L-1.2 -1.2 Z" fill="#D9E6F5" opacity="0.2"><animate attributeName="opacity" values="0.15;0.9;0.15" keyTimes="0;0.5;1" dur="2.6s" begin="2.3s" repeatCount="indefinite"/></path></g><circle cx="331" cy="27" r="1.0" fill="#D9E6F5" opacity="0.2"><animate attributeName="opacity" values="0.1;0.8;0.1" keyTimes="0;0.5;1" dur="3.9s" begin="2.8s" repeatCount="indefinite"/></circle><circle cx="613" cy="31" r="1.3" fill="#D9E6F5" opacity="0.2"><animate attributeName="opacity" values="0.1;0.8;0.1" keyTimes="0;0.5;1" dur="3.2s" begin="3.5s" repeatCount="indefinite"/></circle><g transform="translate(319,50) scale(0.77)"><path d="M0 -5 L1.2 -1.2 L5 0 L1.2 1.2 L0 5 L-1.2 1.2 L-5 0 L-1.2 -1.2 Z" fill="#D9E6F5" opacity="0.2"><animate attributeName="opacity" values="0.15;0.9;0.15" keyTimes="0;0.5;1" dur="4.4s" begin="0.5s" repeatCount="indefinite"/></path></g><circle cx="375" cy="21" r="1.5" fill="#D9E6F5" opacity="0.2"><animate attributeName="opacity" values="0.1;0.8;0.1" keyTimes="0;0.5;1" dur="4.3s" begin="1.7s" repeatCount="indefinite"/></circle><g transform="translate(846,36)"><mask id="nightmoon"><rect x="-22" y="-22" width="44" height="44" fill="white"/><circle cx="7" cy="-4" r="13" fill="black"/></mask><circle r="24" fill="#F2E6C4" opacity="0.1"><animate attributeName="opacity" values="0.07;0.16;0.07" keyTimes="0;0.5;1" dur="6s" repeatCount="indefinite"/></circle><circle r="15" fill="#F2E6C4" opacity="0.92" mask="url(#nightmoon)"/></g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" width="900" height="300" font-family="'Segoe UI', 'Helvetica Neue', Ubuntu, Arial, sans-serif">
+  <title>ChavdaSujal — blooming banner</title>
+  
   <defs>
     <path id="petal" d="M0 0 C-15 -18 -16 -48 0 -62 C16 -48 15 -18 0 0 Z"/>
     <path id="leaf" d="M0 0 Q-26 -8 -34 -30 Q-10 -24 0 0 Z"/>
+    
     <linearGradient id="pg" x1="0" y1="0" x2="0" y2="-62" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#FF7A50"/>
       <stop offset="1" stop-color="#FFD0BE"/>
     </linearGradient>
+    
     <radialGradient id="cg">
       <stop offset="0" stop-color="#FFF3E0"/>
       <stop offset="1" stop-color="#FFC79A"/>
     </radialGradient>
+    
     <linearGradient id="lg" x1="0" y1="0" x2="-34" y2="-30" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#8FAE7E"/>
       <stop offset="1" stop-color="#B5D3A7"/>
     </linearGradient>
+
+    <!-- Premium text gradient for "Sujal" -->
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF6B4A"/>
+      <stop offset="50%" stop-color="#FF9E7D"/>
+      <stop offset="100%" stop-color="#FF6B4A"/>
+    </linearGradient>
+
+    <!-- Soft glow/shadow for text -->
+    <filter id="textGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#FF7A50" flood-opacity="0.25"/>
+    </filter>
   </defs>
 
-  <!-- sun (day only; the night variant swaps in a moon here) -->
-  
+  <!-- Ambient floating particles -->
+  <g transform="translate(356,21) scale(0.93)">
+    <path d="M0 -5 L1.2 -1.2 L5 0 L1.2 1.2 L0 5 L-1.2 1.2 L-5 0 L-1.2 -1.2 Z" fill="#D9E6F5" opacity="0.2">
+      <animate attributeName="opacity" values="0.15;0.9;0.15" keyTimes="0;0.5;1" dur="2.9s" begin="0.2s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  <circle cx="121" cy="35" r="1.0" fill="#D9E6F5" opacity="0.2">
+    <animate attributeName="opacity" values="0.1;0.8;0.1" keyTimes="0;0.5;1" dur="3.4s" begin="3.6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="113" cy="39" r="1.2" fill="#D9E6F5" opacity="0.2">
+    <animate attributeName="opacity" values="0.1;0.8;0.1" keyTimes="0;0.5;1" dur="2.9s" begin="1.0s" repeatCount="indefinite"/>
+  </circle>
+  <g transform="translate(85,64) scale(0.85)">
+    <path d="M0 -5 L1.2 -1.2 L5 0 L1.2 1.2 L0 5 L-1.2 1.2 L-5 0 L-1.2 -1.2 Z" fill="#D9E6F5" opacity="0.2">
+      <animate attributeName="opacity" values="0.15;0.9;0.15" keyTimes="0;0.5;1" dur="3.3s" begin="3.8s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  <circle cx="621" cy="15" r="1.5" fill="#D9E6F5" opacity="0.2">
+    <animate attributeName="opacity" values="0.1;0.8;0.1" keyTimes="0;0.5;1" dur="3.4s" begin="1.6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="72" cy="47" r="1.0" fill="#D9E6F5" opacity="0.2">
+    <animate attributeName="opacity" values="0.1;0.8;0.1" keyTimes="0;0.5;1" dur="4.1s" begin="1.2s" repeatCount="indefinite"/>
+  </circle>
+  <g transform="translate(145,48) scale(0.67)">
+    <path d="M0 -5 L1.2 -1.2 L5 0 L1.2 1.2 L0 5 L-1.2 1.2 L-5 0 L-1.2 -1.2 Z" fill="#D9E6F5" opacity="0.2">
+      <animate attributeName="opacity" values="0.15;0.9;0.15" keyTimes="0;0.5;1" dur="2.6s" begin="3.3s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  <circle cx="620" cy="48" r="1.2" fill="#D9E6F5" opacity="0.2">
+    <animate attributeName="opacity" values="0.1;0.8;0.1" keyTimes="0;0.5;1" dur="3.5s" begin="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="89" cy="48" r="1.3" fill="#D9E6F5" opacity="0.2">
+    <animate attributeName="opacity" values="0.1;0.8;0.1" keyTimes="0;0.5;1" dur="2.0s" begin="0.8s" repeatCount="indefinite"/>
+  </circle>
+  <g transform="translate(462,61) scale(0.78)">
+    <path d="M0 -5 L1.2 -1.2 L5 0 L1.2 1.2 L0 5 L-1.2 1.2 L-5 0 L-1.2 -1.2 Z" fill="#D9E6F5" opacity="0.2">
+      <animate attributeName="opacity" values="0.15;0.9;0.15" keyTimes="0;0.5;1" dur="2.6s" begin="2.3s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  <circle cx="331" cy="27" r="1.0" fill="#D9E6F5" opacity="0.2">
+    <animate attributeName="opacity" values="0.1;0.8;0.1" keyTimes="0;0.5;1" dur="3.9s" begin="2.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="613" cy="31" r="1.3" fill="#D9E6F5" opacity="0.2">
+    <animate attributeName="opacity" values="0.1;0.8;0.1" keyTimes="0;0.5;1" dur="3.2s" begin="3.5s" repeatCount="indefinite"/>
+  </circle>
+  <g transform="translate(319,50) scale(0.77)">
+    <path d="M0 -5 L1.2 -1.2 L5 0 L1.2 1.2 L0 5 L-1.2 1.2 L-5 0 L-1.2 -1.2 Z" fill="#D9E6F5" opacity="0.2">
+      <animate attributeName="opacity" values="0.15;0.9;0.15" keyTimes="0;0.5;1" dur="4.4s" begin="0.5s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  <circle cx="375" cy="21" r="1.5" fill="#D9E6F5" opacity="0.2">
+    <animate attributeName="opacity" values="0.1;0.8;0.1" keyTimes="0;0.5;1" dur="4.3s" begin="1.7s" repeatCount="indefinite"/>
+  </circle>
+  <g transform="translate(846,36)">
+    <mask id="nightmoon">
+      <rect x="-22" y="-22" width="44" height="44" fill="white"/>
+      <circle cx="7" cy="-4" r="13" fill="black"/>
+    </mask>
+    <circle r="24" fill="#F2E6C4" opacity="0.1">
+      <animate attributeName="opacity" values="0.07;0.16;0.07" keyTimes="0;0.5;1" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="15" fill="#F2E6C4" opacity="0.92" mask="url(#nightmoon)"/>
+  </g>
 
   <!-- soft ground -->
   <ellipse cx="450" cy="314" rx="480" ry="30" fill="#FFD0BE" opacity="0.18"/>
@@ -80,6 +157,7 @@
       <animateTransform attributeName="transform" type="scale" from="0" to="1" begin="0.88s" dur="0.6s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.8 0.3 1" fill="freeze"/>
     </use>
   </g>
+  
   <!-- leaves: small flowers -->
   <g transform="translate(65,252) scale(0.6)">
     <use href="#leaf" fill="url(#lg)" opacity="0" transform="scale(0)">
@@ -94,7 +172,7 @@
     </use>
   </g>
 
-  <!-- ===== flower 1 : left big (bloom base 1.0s) ===== -->
+  <!-- ===== flower 1 : left big ===== -->
   <g transform="translate(140,132)">
     <g>
       <animateTransform attributeName="transform" type="rotate" values="0 0 0;2.2 0 0;0 0 0;-2.2 0 0;0 0 0" keyTimes="0;0.25;0.5;0.75;1" dur="7s" begin="2.8s" repeatCount="indefinite"/>
@@ -167,7 +245,7 @@
     </g>
   </g>
 
-  <!-- ===== flower 2 : left small (bloom base 1.25s) ===== -->
+  <!-- ===== flower 2 : left small ===== -->
   <g transform="translate(64,196) scale(0.55)">
     <g>
       <animateTransform attributeName="transform" type="rotate" values="0 0 0;-2.6 0 0;0 0 0;2.6 0 0;0 0 0" keyTimes="0;0.25;0.5;0.75;1" dur="6s" begin="3s" repeatCount="indefinite"/>
@@ -236,7 +314,7 @@
     </g>
   </g>
 
-  <!-- ===== flower 3 : right big (bloom base 1.1s) ===== -->
+  <!-- ===== flower 3 : right big ===== -->
   <g transform="translate(760,127)">
     <g>
       <animateTransform attributeName="transform" type="rotate" values="0 0 0;-2.2 0 0;0 0 0;2.2 0 0;0 0 0" keyTimes="0;0.25;0.5;0.75;1" dur="7.5s" begin="2.9s" repeatCount="indefinite"/>
@@ -309,7 +387,7 @@
     </g>
   </g>
 
-  <!-- ===== flower 4 : right small (bloom base 1.45s) ===== -->
+  <!-- ===== flower 4 : right small ===== -->
   <g transform="translate(836,200) scale(0.55)">
     <g>
       <animateTransform attributeName="transform" type="rotate" values="0 0 0;2.6 0 0;0 0 0;-2.6 0 0;0 0 0" keyTimes="0;0.25;0.5;0.75;1" dur="6.5s" begin="3.1s" repeatCount="indefinite"/>
@@ -407,11 +485,26 @@
     </g>
   </g>
 
-  <!-- text -->
-  <g opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="1.7s" dur="0.9s" fill="freeze"/>
-    <animateTransform attributeName="transform" type="translate" from="0 16" to="0 0" begin="1.7s" dur="0.9s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/>
-    <text x="450" y="150" text-anchor="middle" font-size="46" font-weight="700" letter-spacing="2" fill="#FF9075">ChavdaSujal</text>
-    <text x="450" y="186" text-anchor="middle" font-size="16" letter-spacing="1" fill="#8b949e">Always learning, always blooming</text>
+  <!-- ENHANCED TEXT SECTION -->
+  <g opacity="0" filter="url(#textGlow)">
+    <animate attributeName="opacity" from="0" to="1" begin="1.7s" dur="1.2s" fill="freeze"/>
+    <animateTransform attributeName="transform" type="translate" from="0 24" to="0 0" begin="1.7s" dur="1.2s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/>
+    
+    <!-- Main Name: Bold "Chavda" + Elegant Gradient "Sujal" -->
+    <text x="450" y="145" text-anchor="middle" font-size="54" font-weight="800" letter-spacing="2" fill="#2D3748">
+      Chavda<tspan fill="url(#textGradient)" font-weight="300" font-style="italic"> Sujal</tspan>
+    </text>
+    
+    <!-- Refined Tagline -->
+    <text x="450" y="185" text-anchor="middle" font-size="15" font-weight="500" letter-spacing="6" fill="#718096" text-transform="uppercase">
+      Always learning, always blooming
+    </text>
+    
+    <!-- Animated Decorative Line -->
+    <line x1="450" y1="208" x2="450" y2="208" stroke="url(#textGradient)" stroke-width="2.5" stroke-linecap="round" opacity="0">
+      <animate attributeName="opacity" from="0" to="0.7" begin="2.3s" dur="0.8s" fill="freeze"/>
+      <animate attributeName="x1" from="450" to="340" begin="2.3s" dur="0.8s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/>
+      <animate attributeName="x2" from="450" to="560" begin="2.3s" dur="0.8s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/>
+    </line>
   </g>
 </svg>
