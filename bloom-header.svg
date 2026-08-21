@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" width="900" height="300" font-family="Segoe UI, Ubuntu, Helvetica, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" width="900" height="300" font-family="'Segoe UI', 'Helvetica Neue', Ubuntu, Arial, sans-serif">
   <title>ChavdaSujal — blooming banner</title>
   <defs>
     <path id="petal" d="M0 0 C-15 -18 -16 -48 0 -62 C16 -48 15 -18 0 0 Z"/>
@@ -15,6 +15,18 @@
       <stop offset="0" stop-color="#7FA36B"/>
       <stop offset="1" stop-color="#A8C79A"/>
     </linearGradient>
+    
+    <!-- Premium Text Gradient -->
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E8603C"/>
+      <stop offset="50%" stop-color="#F49B7D"/>
+      <stop offset="100%" stop-color="#E8603C"/>
+    </linearGradient>
+
+    <!-- Soft Glow Filter -->
+    <filter id="textGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#E8603C" flood-opacity="0.25"/>
+    </filter>
   </defs>
 
   <!-- sun (day only; the night variant swaps in a moon here) -->
@@ -412,11 +424,26 @@
     </g>
   </g>
 
-  <!-- text -->
-  <g opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="1.7s" dur="0.9s" fill="freeze"/>
-    <animateTransform attributeName="transform" type="translate" from="0 16" to="0 0" begin="1.7s" dur="0.9s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/>
-    <text x="450" y="150" text-anchor="middle" font-size="46" font-weight="700" letter-spacing="2" fill="#F4795B">ChavdaSujal</text>
-    <text x="450" y="186" text-anchor="middle" font-size="16" letter-spacing="1" fill="#8b949e">Always learning, always blooming</text>
+  <!-- ENHANCED TEXT SECTION -->
+  <g opacity="0" filter="url(#textGlow)">
+    <animate attributeName="opacity" from="0" to="1" begin="1.7s" dur="1.2s" fill="freeze"/>
+    <animateTransform attributeName="transform" type="translate" from="0 24" to="0 0" begin="1.7s" dur="1.2s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/>
+    
+    <!-- Main Name: Bold "Chavda" + Elegant Gradient "Sujal" -->
+    <text x="450" y="145" text-anchor="middle" font-size="54" font-weight="800" letter-spacing="2" fill="#2D3748">
+      Chavda<tspan fill="url(#textGradient)" font-weight="300" font-style="italic"> Sujal</tspan>
+    </text>
+    
+    <!-- Refined Tagline -->
+    <text x="450" y="185" text-anchor="middle" font-size="15" font-weight="500" letter-spacing="6" fill="#718096" text-transform="uppercase">
+      Always learning, always blooming
+    </text>
+    
+    <!-- Animated Decorative Line -->
+    <line x1="450" y1="208" x2="450" y2="208" stroke="url(#textGradient)" stroke-width="2.5" stroke-linecap="round" opacity="0">
+      <animate attributeName="opacity" from="0" to="0.7" begin="2.3s" dur="0.8s" fill="freeze"/>
+      <animate attributeName="x1" from="450" to="340" begin="2.3s" dur="0.8s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/>
+      <animate attributeName="x2" from="450" to="560" begin="2.3s" dur="0.8s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/>
+    </line>
   </g>
 </svg>
