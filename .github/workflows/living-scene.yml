@@ -1,0 +1,49 @@
+name: Living scene
+
+on:
+  schedule:
+    - cron: "23 */3 * * *"
+
+  workflow_dispatch:
+    inputs:
+      weather:
+        description: "Pin the weather — clear/clouds/rain/snow/fog/storm. Blank uses the real forecast."
+        required: false
+        default: ""
+
+      season:
+        description: "Pin the season — spring/summer/autumn/winter. Blank uses today's date."
+        required: false
+        default: ""
+
+      force:
+        description: "Re-render even if the scene has not changed"
+        required: false
+        default: "false"
+
+permissions:
+  contents: write
+
+jobs:
+  scene:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Update living scene
+        uses: yuki4266/living-scene@v1
+        with:
+          # Dhoraji, Gujarat, India
+          lat: "21.73"
+          lon: "70.45"
+          tz: Asia/Kolkata
+
+          weather: ${{ inputs.weather }}
+          season: ${{ inputs.season }}
+          force: ${{ inputs.force }}
+
+          commit-message: "🌦 scene sync: {state}"
