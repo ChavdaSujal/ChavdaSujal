@@ -35,7 +35,7 @@ jobs:
           ref: main
 
       - name: Update living scene
-        uses: yuki4266/living-scene@v1
+        uses: ChavdaSujal/living-scene@v1
         with:
           # Dhoraji, Gujarat, India
           lat: "21.73"
